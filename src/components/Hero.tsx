@@ -1,14 +1,19 @@
 import { useState, useEffect } from 'react';
 import { Phone, ChevronLeft, ChevronRight, Droplets, Heart, Shield, Users } from 'lucide-react';
+import Centre from '../assets/Center.jpg';
+import Foresightsokoto from '../assets/foresight.jpg';
+import Machine1 from '../assets/DSC_0112.jpg';
+import Machine2 from '../assets/DSC_0113.jpg';
+import Machine3 from '../assets/DSC_0115.jpg';
+import ForesightKaduna from '../assets/forres.jpg';
+import Katsina from '../assets/katsina.jpg';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
     {
-      image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      title: "Healthcare Project Management",
-      subtitle: "Excellence in Execution",
+      image: Machine1,
       description: "End-to-end project management for healthcare facilities, ensuring timely and efficient project delivery with the highest standards of quality and safety.",
       cta: "Our Services",
       ctaAction: "services",
@@ -16,7 +21,7 @@ const Hero = () => {
       stats: { number: "50+", label: "Projects Completed" }
     },
     {
-      image: "https://images.unsplash.com/photo-1504439468489-c8920d796a29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80",
+      image: Machine2,
       title: "Reversed Medical Tourism",
       subtitle: "World-Class Care in Nigeria",
       description: "Experience exceptional healthcare services in Nigeria with our comprehensive medical tourism solutions, bringing world-class treatment closer to home.",
@@ -26,7 +31,7 @@ const Hero = () => {
       stats: { number: "1000+", label: "Patients Served" }
     },
     {
-      image: "https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGV1fDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      image: Machine3,
       title: "Healthcare Consultancy",
       subtitle: "Expert Guidance",
       description: "Leverage our extensive expertise to optimize your healthcare facility's operations, improve patient care, and achieve operational excellence.",
@@ -36,7 +41,37 @@ const Hero = () => {
       stats: { number: "98%", label: "Client Satisfaction" }
     },
     {
-      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      image: Centre,
+      title: "Healthcare Development",
+      subtitle: "Building the Future",
+      description: "From concept to completion, we develop state-of-the-art healthcare facilities that meet international standards and serve communities effectively.",
+      cta: "Our Projects",
+      ctaAction: "services",
+      icon: Droplets,
+      stats: { number: "15+", label: "Years Experience" }
+    },
+    {
+      image: ForesightKaduna,
+      title: "Healthcare Development",
+      subtitle: "Building the Future",
+      description: "From concept to completion, we develop state-of-the-art healthcare facilities that meet international standards and serve communities effectively.",
+      cta: "Our Projects",
+      ctaAction: "services",
+      icon: Droplets,
+      stats: { number: "15+", label: "Years Experience" }
+    },
+    {
+      image: Foresightsokoto,
+      title: "Healthcare Development",
+      subtitle: "Building the Future",
+      description: "From concept to completion, we develop state-of-the-art healthcare facilities that meet international standards and serve communities effectively.",
+      cta: "Our Projects",
+      ctaAction: "services",
+      icon: Droplets,
+      stats: { number: "15+", label: "Years Experience" }
+    },
+    {
+      image: Katsina,
       title: "Healthcare Development",
       subtitle: "Building the Future",
       description: "From concept to completion, we develop state-of-the-art healthcare facilities that meet international standards and serve communities effectively.",
@@ -45,6 +80,7 @@ const Hero = () => {
       icon: Droplets,
       stats: { number: "15+", label: "Years Experience" }
     }
+      
   ];
 
   const scrollToSection = (sectionId: string) => {
